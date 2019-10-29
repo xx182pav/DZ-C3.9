@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PWS-C3.9 Local storage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <style>
+        body { min-width: 400px; }
+        .input-group { width: 40vw;}
+        .custom-checkbox {margin-left: 8vw;}
+   </style>
+
+</head>
+<body>
+    <section class="container">
+        <div class="d-flex justify-content-center">
+            <div class="input-group my-5">
+                <div class="input-group-prepend">
+                    <span class="input-group-text mx-4" id="cityInfo">Ваш город</span>
+                </div>
+                <input id="cityInput" type="text" class="form-control">
+                <button type="submit" class="btn btn-secondary mx-4 submit-btn">Отправить</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container checks">
+        <div class="d-flex justify-content-center">
+            <h3 class="my-4">Текущее настроение</h3>
+        </div>
+        <div class="d-flex flex-column">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check" id="check1">
+                <label class="custom-control-label" for="check1">не звонить мне</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check" id="check2">
+                <label class="custom-control-label" for="check2">я прочитал и согласен с правилами пользования сервисом</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check" id="check3">
+                <label class="custom-control-label" for="check3">я не выбираю эту галочку</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check" id="check4">
+                <label class="custom-control-label" for="check4">я подтверждаю, что свобода в интернете — это возможность выбирать галочки</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check" id="check5">
+                <label class="custom-control-label" for="check5">мне больше 12 лет</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input check" id="check6">
+                <label class="custom-control-label" for="check6">это задание выполнено правильно;</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-secondary my-4 save-btn">Сохранить состояние</button>
+            </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
